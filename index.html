@@ -3,30 +3,50 @@
 
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Perfect</title>
+
     <link href="https://fonts.googleapis.com/css?family=Lato%7COswald%7CPlayfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        integrity="sha374-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD70Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel='stylesheet' href='./styles/normalize.css'>
     <link rel='stylesheet' href='./styles/styles.css'>
 </head>
 
 <body>
-    <div id="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li class="dropdown">
-                <a class="dropbtn">Portfolio</a>
-                <div class="dropdown-content">
-                    <a href="https://github.com/TrevorLesley"> My Github</a>
-                    <a href="https://www.linkedin.com/in/trevor-lesley-89715a1b9/">My LinkedIn</a>
-                </div>
-            </li>
-            <li><a href="#AboutMe">About Me</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://github.com/TrevorLesley">My Github</a>
+                        <a class="dropdown-item"
+                            href="https://www.linkedin.com/in/trevor-lesley-89715a1b9/">MyLinkedIn</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
         <div class="favicons">
             <li class="fab fa-facebook-f nopadding"></li>
             <li class="fab fa-twitter nopadding"></li>
@@ -35,216 +55,263 @@
             <li class="fab fa-google-plus nopadding"></li>
             <li class="fas fa-search nopadding"></li>
         </div>
-    </div>
+    </nav>
+
 
     <main>
-        <div class="sub-main-left big-box">
-            <div class='big-box'>
-                <img>
-                <h3>TRAVEL</h3>
-                <h2>WELCOME TO GREENVILLE, SC</h2>
-                <p></p>
-                <button class='btn warning'>CONTINUE READING</button>
-                <hr align="center">
-                <footer>
-                    <ul>
-                        <li>by Aleena on October 13, 2020</li>
-                        <div class="favicons">
-                            <li class="fab fa-facebook-f nopadding"></li>
-                            <li class="fab fa-twitter nopadding"></li>
-                            <li class="fab fa-instagram nopadding"></li>
-                            <li class="fab fa-pinterest nopadding"></li>
-                            <li class="fab fa-google-plus nopadding"></li>
-                            <li class="fas fa-search nopadding"></li>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class='col-8'>
+                    <div class="big-box">
+                        <div class='main-box'>
+                            <img>
+                            <h4>TRAVEL</h4>
+                            <h2>WELCOME TO GREENVILLE, SC</h2>
+                            <p></p>
+                            <button class='btn-read'>CONTINUE READING</button>
+                            <hr align="center">
                         </div>
-                    </ul>
-                </footer>
-            </div>
-
-            <div class='big-box'>
-                <img>
-                <h3>FAMILY</h3>
-                <h2>LET'S GO FLY A KITE</h2>
-                <p></p>
-                <button class='btn warning'>CONTINUE READING</button>
-                <hr align="center">
-                <footer>
-                    <ul>
-                        <li>by Esteban on September 12, 2020</li>
-                        <div class="favicons">
-                            <li class="fab fa-facebook-f nopadding"></li>
-                            <li class="fab fa-twitter nopadding"></li>
-                            <li class="fab fa-instagram nopadding"></li>
-                            <li class="fab fa-pinterest nopadding"></li>
-                            <li class="fab fa-google-plus nopadding"></li>
-                            <li class="fas fa-search nopadding"></li>
-                        </div>
-                    </ul>
-                </footer>
-            </div>
-
-            <div class='big-box'>
-                <img>
-                <h3>TRAVEL</h3>
-                <h2>WAITING TO LAUNCH</h2>
-                <p></p>
-                <button class='btn warning'>CONTINUE READING</button>
-                <hr align="center">
-                <footer>
-                    <ul>
-                        <li>by Scotty on December 29, 2020</li>
-                        <div class="favicons">
-                            <li class="fab fa-facebook-f nopadding"></li>
-                            <li class="fab fa-twitter nopadding"></li>
-                            <li class="fab fa-instagram nopadding"></li>
-                            <li class="fab fa-pinterest nopadding"></li>
-                            <li class="fab fa-google-plus nopadding"></li>
-                            <li class="fas fa-search nopadding"></li>
-                        </div>
-                    </ul>
-                </footer>
-            </div>
-
-            <div class='big-box'>
-                <img>
-                <h3>LIFESTYLE</h3>
-                <h2>DAY STARTED WITH COFFEE</h2>
-                <p></p>
-                <button class='btn warning'>CONTINUE READING</button>
-                <hr align="center">
-                <footer>
-                    <ul>
-                        <li>by Sayeda On June 24, 2020</li>
-                        <div class="favicons">
-                            <li class="fab fa-facebook-f nopadding"></li>
-                            <li class="fab fa-twitter nopadding"></li>
-                            <li class="fab fa-instagram nopadding"></li>
-                            <li class="fab fa-pinterest nopadding"></li>
-                            <li class="fab fa-google-plus nopadding"></li>
-                            <li class="fas fa-search nopadding"></li>
-                        </div>
-                    </ul>
-                </footer>
-            </div>
-
-            <div class='big-box'>
-                <img>
-                <h3>ENTERTAINMENT</h3>
-                <h2>AWESOME POST</h2>
-                <p></p>
-                <button class='btn warning'>CONTINUE READING</button>
-                <hr align="center">
-                <footer>
-                    <ul>
-                        <li>by Trevor on March 17, 2020</li>
-                        <div class="favicons">
-                            <li class="fab fa-facebook-f nopadding"></li>
-                            <li class="fab fa-twitter nopadding"></li>
-                            <li class="fab fa-instagram nopadding"></li>
-                            <li class="fab fa-pinterest nopadding"></li>
-                            <li class="fab fa-google-plus nopadding"></li>
-                            <li class="fas fa-search nopadding"></li>
-                        </div>
-                    </ul>
-                </footer>
-            </div>
-        </div>
-
-
-
-        <div class="right-main-aside">
-
-            <aside class="aside">
-                <img class='background'>
-                <img class='portrait'>
-                <h2>TAYLOR WHITTY</h2>
-                <p></p>
-                <ul>
-                    <div class="favicons">
-                        <li class="fab fa-facebook-f nopadding"></li>
-                        <li class="fab fa-twitter nopadding"></li>
-                        <li class="fab fa-instagram nopadding"></li>
-                        <li class="fab fa-pinterest nopadding"></li>
-                        <li class="fab fa-google-plus nopadding"></li>
-                        <li class="fas fa-search nopadding"></li>
+                        <footer>
+                            <ul>
+                                <li>by Aleena on October 13, 2020</li>
+                                <div class="favicons">
+                                    <li class="fab fa-facebook-f nopadding"></li>
+                                    <li class="fab fa-twitter nopadding"></li>
+                                    <li class="fab fa-instagram nopadding"></li>
+                                    <li class="fab fa-pinterest nopadding"></li>
+                                    <li class="fab fa-google-plus nopadding"></li>
+                                    <li class="fas fa-search nopadding"></li>
+                                </div>
+                            </ul>
+                        </footer>
                     </div>
-                </ul>
-            </aside>
-
-            <aside class="aside">
-                <h2>POPULAR POSTS</h2>
-                <div>
-                    <img>
-                    <h3>ICE CREAM WITH CHALK TASTE</h3>
-                    <p>February 15, 2020</p>
-                    <hr align='center'>
-                </div>
-                <div>
-                    <img>
-                    <h3>THE MOMENT OF MANGO BAR</h3>
-                    <p>March 15, 2020</p>
-                    <hr align='center'>
-                </div>
-                <div>
-                    <img>
-                    <h3>HOMEMADE HERBAL BLACK TEA</h3>
-                    <p>April 15, 2020</p>
-                </div>
-            </aside>
-
-            <aside class="aside">
-                <h2>LATEST POSTS</h2>
-                <div border-inline: medium solid grey;><img>
-                    <h3>A MARINE DIVE FROM SKY</h3>
-                    <p>May 27, 2020</p>
-                    <hr align='center'>
-                </div>
-                <div border-inline: medium solid grey;><img>
-                    <h3>SMALL MEETING ROOM</h3>
-                    <p>April 27, 2020</p>
-                    <hr align='center'>
-                </div>
-                <div border-inline: medium solid grey;><img>
-                    <h3>SELFIE FROM THE BEACH POINT</h3>
-                    <p>April 20, 2020</p>
-                    <hr align='center'>
-                </div>
-                <div border-inline: medium solid grey;><img>
-                    <h3>GATHER SOME ARTIST PENCILS</h3>
-                    <p>May 27, 2020</p>
-                </div>
-            </aside>
-
-            <aside class="aside" id="thumb-nails-in-aside">
-                <h2>INSTAGRAM FEED</h2>
-                <a><img></a>
-                <a><img></a>
-                <a><img></a>
-                <a><img></a>
-                <a><img></a>
-                <a><img></a>
-
-            </aside>
-
-        </div>
 
 
-        <div class="bottom-thumbs">
-            <img src="" alt="random images at bottom" class="together">
-            <img src="" alt="random images at bottom" class="together">
-            <img src="" alt="random images at bottom" class="together">
-            <img src="" alt="random images at bottom" class="together">
-            <img src="" alt="random images at bottom" class="together">
-            <img src="" alt="random images at bottom" class="together">
-            <img src="" alt="random images at bottom" class="together">
-            <img src="" alt="random images at bottom" class="together">
+
+
+
+                    <div class='big-box'>
+                        <div class='main-box'>
+                            <img>
+                            <h4>FAMILY</h4>
+                            <h2>LET'S GO FLY A KITE</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dignissimos
+                                praesentium sint, eum iure numquam earum in suscipit reiciendis? Nostrum voluptas
+                                deserunt nesciunt. Ipsum vel fugit totam esse eum tempora?</p>
+                            <button class='btn-read'>CONTINUE READING</button>
+                            <hr align="center">
+                        </div>
+                        <footer>
+                            <ul>
+                                <li>by Esteban on September 12, 2020</li>
+                                <div class="favicons">
+                                    <li class="fab fa-facebook-f nopadding"></li>
+                                    <li class="fab fa-twitter nopadding"></li>
+                                    <li class="fab fa-instagram nopadding"></li>
+                                    <li class="fab fa-pinterest nopadding"></li>
+                                    <li class="fab fa-google-plus nopadding"></li>
+                                    <li class="fas fa-search nopadding"></li>
+                                </div>
+                            </ul>
+                        </footer>
+                    </div>
+
+
+                    <div class='big-box'>
+                        <div class='main-box'>
+                            <img>
+                            <h4>TRAVEL</h4>
+                            <h2>WAITING TO LAUNCH</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ex quasi minima
+                                molestias laborum distinctio accusantium, voluptatum optio reiciendis, ipsa doloribus
+                                cum odit? In dolorum excepturi voluptatibus atque cum libero?</p>
+                            <button class='btn-read'>CONTINUE READING</button>
+                            <hr align="center">
+                        </div>
+                        <footer>
+                            <ul>
+                                <li>by Scotty on December 29, 2020</li>
+                                <div class="favicons">
+                                    <li class="fab fa-facebook-f nopadding"></li>
+                                    <li class="fab fa-twitter nopadding"></li>
+                                    <li class="fab fa-instagram nopadding"></li>
+                                    <li class="fab fa-pinterest nopadding"></li>
+                                    <li class="fab fa-google-plus nopadding"></li>
+                                    <li class="fas fa-search nopadding"></li>
+                                </div>
+                            </ul>
+
+                        </footer>
+                    </div>
+
+
+
+                    <div class='big-box'>
+                        <div class='main-box'>
+                            <img>
+                            <h4>LIFESTYLE</h4>
+                            <h2>DAY STARTED WITH COFFEE</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos molestiae dolorem quas
+                                consequuntur harum sed, eius, ad error quae est quidem, neque ipsam ex accusantium iste
+                                culpa iure vel nulla!</p>
+                            <button class='btn-read'>CONTINUE READING</button>
+                            <hr align="center">
+                        </div>
+                        <footer>
+                            <ul>
+                                <li>by Sayeda On June 24, 2020</li>
+                                <div class="favicons">
+                                    <li class="fab fa-facebook-f nopadding"></li>
+                                    <li class="fab fa-twitter nopadding"></li>
+                                    <li class="fab fa-instagram nopadding"></li>
+                                    <li class="fab fa-pinterest nopadding"></li>
+                                    <li class="fab fa-google-plus nopadding"></li>
+                                    <li class="fas fa-search nopadding"></li>
+                                </div>
+                            </ul>
+                        </footer>
+                    </div>
+
+
+
+                    <div class='big-box'>
+                        <div class='main-box'>
+                            <img>
+                            <h4>ENTERTAINMENT</h4>
+                            <h2>AWESOME POST</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corrupti optio
+                                veritatis. Esse molestias, a numquam neque perspiciatis error fugit reprehenderit
+                                placeat necessitatibus dolores, suscipit obcaecati magnam, quae quia. Nemo?</p>
+                            <button class='btn-read'>CONTINUE READING</button>
+                            <hr align="center">
+                        </div>
+                        <footer>
+                            <ul>
+                                <li>by Trevor on March 17, 2020</li>
+                                <div class="favicons">
+                                    <li class="fab fa-facebook-f nopadding"></li>
+                                    <li class="fab fa-twitter nopadding"></li>
+                                    <li class="fab fa-instagram nopadding"></li>
+                                    <li class="fab fa-pinterest nopadding"></li>
+                                    <li class="fab fa-google-plus nopadding"></li>
+                                    <li class="fas fa-search nopadding"></li>
+                                </div>
+                            </ul>
+                        </footer>
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-3">
+
+                    <aside class="aside">
+                        <img class='background'>
+                        <img class='box-image' src='./images/73371798.jpeg'>
+                        <h2>TREVOR LESLEY</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sed ratione iure quae
+                            ea explicabo delectus, voluptas cum modi odit a, fugit ipsa dolore. Ut fugit nam delectus
+                            non?</p>
+                        <ul>
+                            <div class="favicons">
+                                <li class="fab fa-facebook-f nopadding"></li>
+                                <li class="fab fa-twitter nopadding"></li>
+                                <li class="fab fa-instagram nopadding"></li>
+                                <li class="fab fa-pinterest nopadding"></li>
+                                <li class="fab fa-google-plus nopadding"></li>
+                                <li class="fas fa-search nopadding"></li>
+                            </div>
+                        </ul>
+                    </aside>
+
+
+
+                    <aside class="aside">
+                        <h2>POPULAR POSTS</h2>
+                        <div>
+                            <img>
+                            <h4>ICE CREAM WITH CHALK TASTE</h4>
+                            <p>February 15, 2020</p>
+                            <hr align='center'>
+                        </div>
+                        <div>
+                            <img>
+                            <h4>THE MOMENT OF MANGO BAR</h4>
+                            <p>March 15, 2020</p>
+                            <hr align='center'>
+                        </div>
+                        <div>
+                            <img>
+                            <h4>HOMEMADE HERBAL BLACK TEA</h4>
+                            <p>April 15, 2020</p>
+                        </div>
+                    </aside>
+
+
+
+
+                    <aside class="aside">
+                        <h2>LATEST POSTS</h2>
+                        <div border-inline: medium solid grey;><img>
+                            <h3>A MARINE DIVE FROM SKY</h3>
+                            <p>May 27, 2020</p>
+                            <hr align='center'>
+                        </div>
+                        <div border-inline: medium solid grey;><img>
+                            <h3>SMALL MEETING ROOM</h3>
+                            <p>April 27, 2020</p>
+                            <hr align='center'>
+                        </div>
+                        <div border-inline: medium solid grey;><img>
+                            <h3>SELFIE FROM THE BEACH POINT</h3>
+                            <p>April 20, 2020</p>
+                            <hr align='center'>
+                        </div>
+                        <div border-inline: medium solid grey;><img>
+                            <h3>GATHER SOME ARTIST PENCILS</h3>
+                            <p>May 27, 2020</p>
+                        </div>
+                    </aside>
+
+
+
+                    <aside class="aside" id="thumb-nails-in-aside">
+                        <h2>INSTAGRAM FEED</h2>
+                        <a><img src="./images/cat.jpeg"></a>
+                        <a><img src="./images/cat.jpeg"></a>
+                        <a><img src="./images/cat.jpeg"></a>
+                        <a><img src="./images/cat.jpeg"></a>
+                        <a><img src="./images/cat.jpeg"></a>
+                        <a><img src="./images/cat.jpeg"></a>
+
+                    </aside>
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class='col-12 bottom-thumbs'>
+
+                    <img src="./images/cat.jpeg" alt="random imag" class="together">
+                    <img src="./images/cat.jpeg" alt="random ima" class="together">
+                    <img src="./images/cat.jpeg" alt="random ima" class="together">
+                    <img src="./images/cat.jpeg" alt="random ima" class="together">
+                    <img src="./images/cat.jpeg" alt="random ima" class="together">
+                    <img src="./images/cat.jpeg" alt="random ima" class="together">
+                    <img src="./images/cat.jpeg" alt="random ima" class="together">
+                    <img src="./images/cat.jpeg" alt="random ima" class="together">
+                </div>
+            </div>
         </div>
     </main>
 
 
     <footer class="footer-tru-bottom">
-        <p> "@2021 Carolina Code School Students Build Cool Stuff"</p>
+        <p> @2021 Carolina Code School Students Build Cool Stuff</p>
     </footer>
+
 </body>
 
 </html>

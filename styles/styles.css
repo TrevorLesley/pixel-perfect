@@ -1,118 +1,69 @@
-/* Style the navbar
-#navbar {
-    overflow: hidden;
-    background-color: #333;
-  }
+* {
+  box-sizing: border-box;
+}
+
+
+
+.together {
+  width: auto;
+ }
+ 
+ /* aside h2s */
+ .aside h2 {
+   color: darkslategrey;
+   text-align: center;
+   /* margin:3%; */
+ }
+ 
+ /* aside h3 */
+ .aside h3 {
+   color: darkslategrey;
+   text-align: center;
+   /* margin:3%; */
+ }
+ 
+ .big-box h4 {
+     color: #ed4005;
+     /* margin:3%; */
+ }
+ 
+ .big-box h2 {
+   color: darkslategrey;
   
-  /* Navbar links */
-  #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-
-  }
+   /* margin:3%; */
+ }
+ 
+ .aside {
+   border: solid red;
+ }
+ 
+ .big-box {
+   border: solid purple;
+   list-style-type: none;
+ 
+ }
+ 
+ .footer-tru-bottom {
+   text-align: center;
+   background-color: grey;
+   border:solid black;
+ }
+ 
+ .btn-read {
+   border:2px solid #ed4005;
+   color: #ed4005;
+ }
+ 
+ .main-box {
+   text-align: center;
   
-  /* Page content */
-  /* .content {
-    padding: 16px;
-  } */
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  /* .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  } */
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  /* .sticky + .content {
-    padding-top: 60px;
-  } */
+ }
+ p {
+   margin: 2%;
+ }
 
-  /* .NAME OF THE CLASS OF THE ROUND PICTURE AT TOP OF ASIDE {
-    border-radius: 50%;
-    width: 40%;
-    height: 40%;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px;
-} */
-
-/* .ASIDES {
-    width: 30%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: right;
-    background-color: whitesmoke;
-  } */
-
-
-  /* makes images in aside instagram evenly auto spaced */
-  #thumb-nails-in-aside {   
-    flex-wrap: wrap;
-    margin-left: auto; 
-    margin-right: auto;
-
-     text-align: justify;
-    -ms-text-justify: distribute-all-lines;
-    text-justify: distribute-all-lines;
-}
-#thumb-nails-in-aside a {
-    vertical-align: top;
-    display: inline;
-    zoom: 1;
-}
-.stretch {
-    width: 100%;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0
-}
-
-/* in main H3s will be orange color 
-h2s will ber black with bold and much larger font  */
-
-
-/* aside h2s */
-.aside h2 {
-  color: darkslategrey;
-  margin:3%;
-}
-
-/* aside h3 */
-.aside h3 {
-  color: darkslategrey;
-  margin:3%;
-}
-
-.big-box h3 {
-    color: #ed4005;
-    margin:3%;
-}
-
-.big-box h3 {
-  color: darkslategrey;
-  margin:3%;
-}
-
-.sub-main-left {
-  float:left;
-  width: 60%;
-  height: auto;
-  color:darkturquoise;
-}
-
-.right-main-aside {
-  float: right;
-  width: 35%;
-  height: auto;
-}
-
-/* .bottom-thumbs{
-  display: block;
-  width: 100%;
-  height: 40px;
-} */
+ .box-image {
+   width: 100%;
+   height: 40%;
+   
+ }
